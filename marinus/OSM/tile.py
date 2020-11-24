@@ -20,8 +20,10 @@ DEBUG = True
 OSM_TILE_WIDTH = 256
 OSM_TILE_HEIGHT = 256
 OSM_TILE_SIZE = (OSM_TILE_WIDTH, OSM_TILE_HEIGHT)
-LCD_TILE_WIDTH = 128
-LCD_TILE_HEIGHT = 160
+#LCD_TILE_WIDTH = 128 
+#LCD_TILE_HEIGHT = 160
+LCD_TILE_WIDTH = 150
+LCD_TILE_HEIGHT = 200
 LCD_TILE_SIZE = (LCD_TILE_WIDTH, LCD_TILE_HEIGHT)
 
 # Fetch (up to) this many OSM tiles on demand
@@ -38,21 +40,21 @@ LCD_TILES_OFFSETS = ((-LCD_TILES_DELTAS[0],) * 2)
 
 
 SERVERS = {
-'mapquest': ['http://otile1.mqcdn.com/tiles/1.0.0/osm',
-             'http://otile2.mqcdn.com/tiles/1.0.0/osm',
-             'http://otile3.mqcdn.com/tiles/1.0.0/osm',
-             'http://otile4.mqcdn.com/tiles/1.0.0/osm'],
-'mapquest_open_aerial': ['http://oatile1.mqcdn.com/naip',
-                         'http://oatile2.mqcdn.com/naip',
-                         'http://oatile3.mqcdn.com/naip',
-                         'http://oatile4.mqcdn.com/naip'],
+#'mapquest': ['http://otile1.mqcdn.com/tiles/1.0.0/osm',
+#             'http://otile2.mqcdn.com/tiles/1.0.0/osm',
+#             'http://otile3.mqcdn.com/tiles/1.0.0/osm',
+#             'http://otile4.mqcdn.com/tiles/1.0.0/osm'],
+#'mapquest_open_aerial': ['http://oatile1.mqcdn.com/naip',
+#                         'http://oatile2.mqcdn.com/naip',
+#                         'http://oatile3.mqcdn.com/naip',
+#                         'http://oatile4.mqcdn.com/naip'],
 # OSM says you can't use their servers directly.
-#'osm': ['http://a.tile.openstreetmap.org',
-#        'http://b.tile.openstreetmap.org',
-#        'http://c.tile.openstreetmap.org']
+'osm': ['http://a.tile.openstreetmap.org',
+        'http://b.tile.openstreetmap.org',
+        'http://c.tile.openstreetmap.org']
 }
 
-SERVER_TYPE = 'mapquest'
+SERVER_TYPE = 'osm'
 SERVER_URL_PREFIX = random.choice(SERVERS[SERVER_TYPE])
 
 
