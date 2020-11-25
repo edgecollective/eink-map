@@ -22,8 +22,8 @@ OSM_TILE_HEIGHT = 256
 OSM_TILE_SIZE = (OSM_TILE_WIDTH, OSM_TILE_HEIGHT)
 #LCD_TILE_WIDTH = 128 
 #LCD_TILE_HEIGHT = 160
-LCD_TILE_WIDTH = 150
-LCD_TILE_HEIGHT = 200
+LCD_TILE_WIDTH = 200
+LCD_TILE_HEIGHT = 250
 LCD_TILE_SIZE = (LCD_TILE_WIDTH, LCD_TILE_HEIGHT)
 
 # Fetch (up to) this many OSM tiles on demand
@@ -51,7 +51,15 @@ SERVERS = {
 # OSM says you can't use their servers directly.
 'osm': ['http://a.tile.openstreetmap.org',
         'http://b.tile.openstreetmap.org',
-        'http://c.tile.openstreetmap.org']
+        'http://c.tile.openstreetmap.org'],
+'stamen_toner_lite': ['https://stamen-tiles-a.a.ssl.fastly.net/toner-lite','https://stamen-tiles-b.a.ssl.fastly.net/toner-lite','https://stamen-tiles-c.a.ssl.fastly.net/toner-lite'],
+'cyclo': ['https://a.tile-cyclosm.openstreetmap.fr/cyclosm/','https://b.tile-cyclosm.openstreetmap.fr/cyclosm/','https://c.tile-cyclosm.openstreetmap.fr/cyclosm/'
+],
+'opentopo': ['https://a.tile.opentopomap.org/','https://b.tile.opentopomap.org/','https://c.tile.opentopomap.org/'
+],
+'stamen_toner': ['https://stamen-tiles-a.a.ssl.fastly.net/toner/','https://stamen-tiles-b.a.ssl.fastly.net/toner/','https://stamen-tiles-c.a.ssl.fastly.net/toner/'],
+'osm_mapnik': ['https://a.tile.openstreetmap.org/','https://b.tile.openstreetmap.org/','https://c.tile.openstreetmap.org/']
+
 }
 
 SERVER_TYPE = 'osm'
